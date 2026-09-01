@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Tabelas no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25px">
+        </h1>
+        <nav>
+            <a href="index.html">Página Principal</a> |
+            <a href="#conceito-tabelas">Conceito</a> |
+            <a href="#explicando-tabelas">O que são Tabelas?</a> |
+            <a href="#exemplo-codigo-tabelas">Exemplo de Código</a> |
+            <a href="#estrutura-tabelas">Estrutura de uma Tabela</a> |
+            <a href="#explicacao-tags-tabelas">Explicação das Tags</a> |
+            <a href="#boas-praticas-tabelas">Boas Práticas</a> |
+            <a href="#erros-comuns-tabelas">Erros Comuns</a> |
+            <a href="#referencias-tabelas">Referências</a> |
+            <a href="#resumo-tabelas">Resumo</a>
+        </nav>
+        <hr>
+
+        <h2 id="conceito-tabelas">Conceito</h2>
+        <p>
+            As tabelas são utilizadas para organizar dados em linhas e colunas, facilitando a leitura e comparação de
+            informações.
+        </p>
+        <p>
+            Elas são muito utilizadas para exibir relatórios, horários, planilhas simples e tabelas de dados.
+        </p>
+
+        <blockquote
+            cite="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics">
+            <p>
+                A MDN reforça que tabelas devem ser utilizadas para representar dados tabulares e não para criar layouts
+                de páginas, prática antiga atualmente desencorajada.
+            </p>
+        </blockquote>
+        <small>Fonte: <a
+                href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics"
+                target="_blank" rel="noopener noreferrer"
+                title="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics">MDN
+                Web Docs - HTML Table Basics</a></small>
+    </header>
+    <hr>
+
+    <main>
+        <section id="explicando-tabelas">
+            <h2>O que são Tabelas?</h2>
+            <p>
+                Uma tabela é uma estrutura formada por linhas e colunas utilizada para apresentar informações
+                relacionadas.
+            </p>
+
+            <p>
+                No HTML, as tabelas são construídas utilizando tags específicas que organizam os dados de forma
+                hierárquica.
+            </p>
+        </section>
+        <hr>
+
+        <!-- Exemplo de Código em HTML - Tabelas -->
+        <section id="exemplo-codigo-tabelas">
+            <h2>Exemplo de Código</h2>
+            <p>Veja abaixo um exemplo de código HTML com tabelas e logo após a sua saída:</p>
+            <pre>
+<a href="#tag-table">&lt;table&gt;</a>
+    <a href="#tag-tr">&lt;tr&gt;</a>
+        <a href="#tag-th">&lt;th&gt;Tecnologia&lt;/th&gt;</a>
+        &lt;th&gt;Função&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        <a href="#tag-td">&lt;td&gt;HTML&lt;/td&gt;</a>
+        &lt;td&gt;Estrutura&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;CSS&lt;/td&gt;
+        &lt;td&gt;Estilo&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+            <p id="saida-do-codigo-tabelas"><b>Saída do código acima:</b></p>
+            <div>
+                <table>
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Função</th>
+                    </tr>
+
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estrutura</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Estilo</td>
+                    </tr>
+                </table>
+            </div>
+            <p><strong>Observação: </strong>a tabela acima possui estilização CSS de bordas e preenchimentos para fins
+                de melhor visualização do conteúdo.</p>
+
+        </section>
+        <hr>
+
+        <section id="estrutura-tabelas">
+            <h2>Estrutura de uma Tabela</h2>
+
+            <h3>Apresentação Visual</h3>
+            <pre>
+&lt;table&gt;
+│
+├─ &lt;tr&gt;
+│   ├─ &lt;th&gt;
+│   └─ &lt;th&gt;
+│
+├─ &lt;tr&gt;
+│   ├─ &lt;td&gt;
+│   └─ &lt;td&gt;
+│
+└─ &lt;tr&gt;
+    ├─ &lt;td&gt;
+    └─ &lt;td&gt;
+
+Legenda:
+table → tabela
+tr    → linha
+th    → cabeçalho
+td    → célula de dados
+            </pre>
+        </section>
+        <hr>
+
+        <section id="explicacao-tags-tabelas">
+            <h2>Explicação das Tags</h2>
+
+            <h3 id="tag-table">Tag &lt;table&gt;</h3>
+            <p>
+                O que faz: cria uma tabela.
+            </p>
+
+            <h3 id="tag-tr">Tag &lt;tr&gt;</h3>
+            <p>
+                O que faz: representa uma linha da tabela.
+            </p>
+
+            <h3 id="tag-th">Tag &lt;th&gt;</h3>
+            <p>
+                O que faz: representa uma célula de cabeçalho.
+            </p>
+
+            <h3 id="tag-td">Tag &lt;td&gt;</h3>
+            <p>
+                O que faz: representa uma célula de dados.
+            </p>
+        </section>
+        <hr>
+
+        <section id="boas-praticas-tabelas">
+
+            <h2>Boas Práticas</h2>
+            <ul>
+                <li>Utilizar tabelas apenas para dados tabulares.</li>
+                <li>Utilizar a tag &lt;th&gt; para cabeçalhos.</li>
+                <li>Manter os dados organizados em linhas e colunas.</li>
+                <li>Utilizar títulos claros para os cabeçalhos.</li>
+                <li>Evitar tabelas excessivamente grandes ou complexas.</li>
+            </ul>
+
+
+            <h3>Curiosidade</h3>
+            <p>
+                Antigamente muitos sites utilizavam tabelas para construir o layout completo da página.
+                Atualmente essa prática foi substituída por elementos semânticos do HTML e técnicas modernas de CSS.
+            </p>
+        </section>
+        <hr>
+
+        <section id="erros-comuns-tabelas">
+
+            <h2>Erros Comuns</h2>
+            <ul>
+                <li>Utilizar tabelas para criar layouts de páginas.</li>
+                <li>Esquecer a tag &lt;tr&gt;.</li>
+                <li>Utilizar &lt;td&gt; no lugar de &lt;th&gt; nos cabeçalhos.</li>
+                <li>Organizar dados em colunas incorretas.</li>
+                <li>Fechar tags na ordem errada.</li>
+            </ul>
+
+        </section>
+        <hr>
+
+        <section id="referencias-tabelas">
+
+            <h2>Referências</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics">MDN
+                        Web Docs - HTML Tables</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table" target="_blank"
+                        rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table">MDN Web Docs
+                        - table</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tr" target="_blank"
+                        rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tr">MDN Web Docs -
+                        tr</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/th" target="_blank"
+                        rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/th">MDN Web Docs -
+                        th</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/td" target="_blank"
+                        rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/td">MDN Web Docs -
+                        td</a></li>
+                <li><a href="https://www.w3schools.com/html/html_tables.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_tables.asp">W3Schools - HTML Tables</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="resumo-tabelas">
+            <h2>Resumo</h2>
+            <p>
+                As tabelas permitem organizar dados em linhas e colunas. As tags &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; e
+                &lt;td&gt; trabalham em
+                conjunto para criar tabelas estruturadas e fáceis de interpretar.
+            </p>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Larissa de Almeida Rosa © 2026</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
+        <a href="#">Voltar ao topo da página.</a>
+    </footer>
+</body>
+
+</html>

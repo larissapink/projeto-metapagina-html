@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links no HTML</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Links no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25px">
+        </h1>
+        <nav>
+            <a href="index.html">Página Principal</a> |
+            <a href="#conceito-links">Conceito</a> |
+            <a href="#explicando-links">O que são Links?</a> |
+            <a href="#exemplo-codigo-links">Exemplo de Código</a> |
+            <a href="#tipos-links">Tipos de Links</a> |
+            <a href="#explicacao-tags-links">Explicação das Tags e Atributos</a> |
+            <a href="#curiosidade-links">Curiosidade</a> |
+            <a href="#boas-praticas-links">Boas Práticas</a> |
+            <a href="#erros-comuns-links">Erros Comuns</a> |
+            <a href="#referencias-links">Referências</a> |
+            <a href="#resumo-links">Resumo</a>
+        </nav>
+        <hr>
+
+        <h2 id="conceito-links">Conceito</h2>
+
+        <p>
+            Os links são elementos essenciais da Web, pois permitem conectar páginas,
+            documentos, arquivos e recursos na internet.
+        </p>
+
+        <p>
+            No HTML, os links são criados utilizando a tag &lt;a&gt;, também conhecida
+            como âncora.
+        </p>
+
+        <p>Exemplo de link externo para o Google:<br>
+            Clique em <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Visitar o Google</a> e
+            você será redirecionado para o site do Google.
+        </p>
+
+    </header>
+    <hr>
+
+    <main>
+        <section id="explicando-links">
+            <h2>O que são Links?</h2>
+
+            <p>
+                Um link é um elemento clicável que direciona o usuário para outra página,
+                seção ou recurso.
+            </p>
+        </section>
+        <hr>
+
+        <!-- Exemplo de Código em HTML - Links <a> -->
+        <section id="exemplo-codigo-links">
+            <h2>Exemplo de Código</h2>
+            <p>Veja abaixo um exemplo de código HTML com links e logo após a sua saída:</p>
+<pre>
+<a href="#a-relativo">&lt;a href="index.html"&gt;Página Principal&lt;/a&gt;</a>
+
+<a href="#a-absoluto">&lt;a href="https://developer.mozilla.org" target="_blank"&gt;MDN Web Docs&lt;/a&gt;</a>
+
+<a href="#a-ancora">&lt;a href="#referencias"&gt;Ir para Referências&lt;/a&gt;</a>
+
+</pre>
+            <p><strong>Observação:</strong> Para correta relação entre os links da seção da página, utilize os IDs correspondentes a cada seção.</p>
+            <p>
+            Exemplo: <br>
+            <code>&lt;a href="#referencias-links"&gt;Ir para Referências&lt;/a&gt;</code><br>
+            </p>
+            <p> 
+            <em>- irá direcionar para a seção de "Referências" da página se o ID estiver corretamente definido -</em><br>
+            <code>&lt;section id="referencias-links"&gt;<br>
+                &lt;h2&gt;Referências&lt;/h2&gt;<br>
+                &lt;/section&gt;</code>
+            </p>
+            
+            </p>
+            <p><b>Teste a saída do código acima:</b></p>
+            <div id="saida-do-codigo-links">
+                <a href="index.html">Página Principal</a><br><br>
+                <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a><br><br>
+                <a href="#referencias-links">Ir para Referências</a><br>
+            </div>
+
+        </section>
+        <hr>
+
+        <section id="tipos-links">
+            <h2>Tipos de Links</h2>
+
+            <h3 id="a-relativo">Link Relativo</h3>
+            <p>
+                Utilizado para navegar entre páginas do próprio projeto.
+            </p>
+            <p>Exemplo: <br>
+                <code><a href=2-titulos-paragrafos.html target="_blank" rel="noopener noreferrer">&lt;a href="2-titulos-paragrafos.html"&gt;Títulos e Parágrafos no HTML&lt;/a&gt;</a></code>
+            </p>
+
+            <h3 id="a-absoluto">Link Absoluto</h3>
+            <p>
+                Utilizado para acessar páginas externas por meio de uma URL completa.
+            </p>
+            <p>Exemplo: <br>
+                <code><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">&lt;a href="https://developer.mozilla.org"&gt;MDN Web Docs&lt;/a&gt;</a></code>
+            </p>
+
+            <h3 id="a-ancora">Link de Âncora</h3>
+            <p>
+                Utilizado para navegar para uma seção da mesma página.
+            </p>
+            <p>Exemplo: <br>
+                <code><a href="#boas-praticas-links">&lt;a href="#boas-praticas-links"&gt;Ir para Boas Práticas&lt;/a&gt;</a></code>
+            </p>
+
+        </section>
+        <hr>
+
+        <section id="explicacao-tags-links">
+            <h2>Explicação das Tags e Atributos</h2>
+
+            <h3>Tag &lt;a&gt;</h3>
+            <p>
+                O que faz: cria um link clicável.
+            </p>
+
+            <h3>Atributo href=" "</h3>
+            <p>
+                O que faz: define o destino do link.
+            </p>
+            <p>Exemplo: <br>
+                <code>&lt;a href="https://developer.mozilla.org"&gt;MDN Web Docs&lt;/a&gt;
+                </code>
+            </p>
+
+            <h3>Atributo target=" "</h3>
+            <p>
+                O que faz: define onde o link será aberto.
+            </p>
+            <p>Destaque para os valores mais comuns:</p>
+            <ul>
+                <li><code>_blank</code>: abre o link em uma nova aba ou janela.</li>
+                <li><code>_self</code>: abre o link na mesma aba ou janela atual. Este é o comportamento padrão.</li>
+            </ul>
+
+            <h3 id="atrib-rel">Atributo rel=" "</h3>
+            <p>
+                O que faz: adiciona informações sobre a relação entre a página atual e o destino do link.
+            </p>
+        </section>
+        <hr>
+
+        <section id="curiosidade-links">
+            <h3>Curiosidade: Tag &lt;link&gt;</h3>
+            <p>
+                Apesar do nome parecido, a tag &lt;link&gt; possui uma finalidade
+                diferente da tag &lt;a&gt;.
+            </p>
+            <p>
+                Ela é utilizada para relacionar recursos externos ao documento HTML,
+                como folhas de estilo CSS.
+            </p>
+            <p>
+                Exemplo:
+            </p>
+            <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</pre>
+            <p>
+                Você aprenderá mais sobre essa tag quando começar a estudar CSS.
+            </p>
+        </section>
+        <hr>
+
+        <section id="boas-praticas-links">
+            <h2>Boas Práticas</h2>
+            <ul>
+                <li>Utilizar textos descritivos para os links.</li>
+                <li>Usar links relativos para páginas internas do projeto.</li>
+                <li>Utilizar target="_blank" apenas quando realmente necessário.</li>
+                <li>Utilizar rel="noopener noreferrer" em links externos que abrem em nova guia. (Ajuda a evitar problemas de segurança ao abrir links externos em novas abas)</li>
+                <li>Verificar periodicamente se os links continuam funcionando.</li>
+            </ul>
+
+        </section>
+        <hr>
+
+        <section id="erros-comuns-links">
+
+            <h2>Erros Comuns</h2>
+            <ul>
+                <li>Utilizar textos genéricos como "clique aqui".</li>
+                <li>Esquecer o atributo href.</li>
+                <li>Criar links quebrados.</li>
+                <li>Utilizar URLs incorretas.</li>
+                <li>Abrir todos os links em novas abas desnecessariamente.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="referencias-links">
+
+            <h2>Referências</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Creating_links"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Creating_links">MDN
+                        Web Docs - Creating Hyperlinks</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank"
+                        rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">MDN Web Docs - The Anchor
+                        Element</a></li>
+                <li><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_links.asp">W3Schools - HTML Links</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="resumo-links">
+
+            <h2>Resumo</h2>
+            <p>
+                A tag &lt;a&gt; é utilizada para criar links em HTML. Por meio do atributo
+                href é possível direcionar o usuário para páginas internas, páginas
+                externas ou seções da própria página.
+            </p>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Larissa de Almeida Rosa © 2026</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
+        <a href="#">Voltar ao topo da página.</a>
+    </footer>
+</body>
+
+</html>
