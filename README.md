@@ -2,6 +2,9 @@
 
 Projeto acadêmico desenvolvido com foco em aprendizado prático de **HTML5**, organizado como uma metapágina de estudos com conteúdos visuais e progressivos sobre fundamentos de desenvolvimento web.
 
+## 🌐 Acesso ao projeto
+[Visualizar site publicado](https://larissapink.github.io/projeto-metapagina-html-github/)
+
 ## 🎯 Objetivo
 
 Este projeto consiste em um portfólio desenvolvido em **HTML**, cujo objetivo principal é demonstrar na prática como estou aplicando os conceitos e conhecimentos adquiridos durante a graduação em projetos que simulam desafios reais do mercado de desenvolvimento web.
