@@ -1,4 +1,4 @@
-Para deixar o projeto ainda mais atrativo para recrutadores, crie outras páginas seguindo exatamente esse padrão para temas como:
+Tema das Páginas:
 
 Estrutura Básica do HTML
 Títulos e Parágrafos
