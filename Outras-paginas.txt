@@ -1,0 +1,12 @@
+Para deixar o projeto ainda mais atrativo para recrutadores, crie outras páginas seguindo exatamente esse padrão para temas como:
+
+Estrutura Básica do HTML
+Títulos e Parágrafos
+Links (<a>)
+Imagens (<img>)
+Listas (<ul>, <ol>, <li>)
+Tabelas
+Formulários
+Tags Semânticas
+Áudio e Vídeo
+Acessibilidade Básica

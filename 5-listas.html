@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas no HTML</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Listas no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25px">
+        </h1>
+        <nav>
+            <a href="index.html">Página Principal</a> |
+            <a href="#conceito-listas">Conceito</a> |
+            <a href="#explicando-listas">O que são Listas?</a> |
+            <a href="#exemplo-codigo-listas">Exemplo de Código</a> |
+            <a href="#tipos-de-listas">Tipos de Listas</a> |
+            <a href="#explicacao-tags-listas">Explicação das Tags</a> |
+            <a href="#boas-praticas-listas">Boas Práticas</a> |
+            <a href="#erros-comuns-listas">Erros Comuns</a> |
+            <a href="#referencias-listas">Referências</a> |
+            <a href="#resumo-listas">Resumo</a>
+        </nav>
+        <hr>
+
+        <h2 id="conceito-listas">Conceito</h2>
+        <p>
+            As listas são utilizadas para organizar informações relacionadas de forma clara e estruturada.
+        </p>
+
+        <p>
+            Elas são muito utilizadas em menus de navegação, tutoriais, documentações e listas de tarefas.
+        </p>
+    </header>
+    <hr>
+
+    <main>
+        <section id="explicando-listas">
+            <h2>O que são Listas?</h2>
+
+            <p>
+                Uma lista é um conjunto de itens relacionados apresentados de forma organizada.
+            </p>
+
+            <p>
+                O HTML oferece listas ordenadas, não ordenadas e listas aninhadas.
+            </p>
+        </section>
+        <hr>
+
+
+        <!-- Exemplo de Código em HTML - Listas <ul>, <ol>, <li> -->
+        <section id="exemplo-codigo-listas">
+            <h2>Exemplo de Código</h2>
+            <p>Veja abaixo um exemplo de código HTML com listas e logo após a sua saída:</p>
+            <pre>
+&lt;p&gt;Lista não ordenada&lt;/p&gt;
+
+<a href="#tag-ul">&lt;ul&gt;</a>
+    <a href="#tag-li-ul">&lt;li&gt;HTML&lt;/li&gt;</a>
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lista ordenada&lt;/p&gt;
+
+<a href="#tag-ol">&lt;ol&gt;</a>
+    <a href="#tag-li-ol">&lt;li&gt;Instalar VS Code&lt;/li&gt;</a>
+    &lt;li&gt;Criar arquivo HTML&lt;/li&gt;
+    &lt;li&gt;Abrir no navegador&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+            <p id="saida-do-codigo-listas"><b>Saída do código acima:</b></p>
+            <div>
+                <p>Lista não ordenada</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>Lista ordenada</p>
+                <ol>
+                    <li>Instalar VS Code</li>
+                    <li>Criar arquivo HTML</li>
+                    <li>Abrir no navegador</li>
+                </ol>
+            </div>
+
+        </section>
+        <hr>
+
+        <section id="tipos-de-listas">
+            <h2>Tipos de Listas</h2>
+
+            <h3>Lista não ordenada</h3>
+            <p>
+                Utilizada quando a ordem dos itens não é importante.
+            </p>
+
+            <h3>Lista ordenada</h3>
+            <p>
+                Utilizada quando a sequência dos itens é importante.
+            </p>
+
+            <h3>Lista Aninhada</h3>
+            <p>
+                Uma lista aninhada é uma lista inserida dentro de outra lista.
+            </p>
+            <p>Exemplo: <br>
+            <pre>
+&lt;ul&gt;
+    &lt;li&gt;Front-end
+        &lt;ul&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;CSS&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Back-end
+        &lt;ul&gt;
+            &lt;li&gt;API&lt;/li&gt;
+            &lt;li&gt;Banco de Dados&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+            </p>
+            <p><b>Saída do código acima:</b></p>
+            <ul>
+                <li>Front-end
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+                <li>Back-end
+                    <ul>
+                        <li>API</li>
+                        <li>Banco de Dados</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="explicacao-tags-listas">
+            <h2>Explicação das Tags</h2>
+
+            <h3 id="tag-ul">Tag &lt;ul&gt;</h3>
+            <p>
+                O que faz: cria uma lista não ordenada.
+            </p>
+
+            <h3 id="tag-ol">Tag &lt;ol&gt;</h3>
+            <p>
+                O que faz: cria uma lista ordenada.
+            </p>
+
+            <h3 id="tag-li">Tag &lt;li&gt;</h3>
+            <p>
+                O que faz: representa um item de lista.
+            </p>
+            <p><strong>Observação: </strong>
+                a tag &lt;li&gt; pode ser utilizada tanto dentro de uma tag <em id="tag-li-ul">&lt;ul&gt;</em> quanto
+                dentro de uma tag <em id="tag-li-ol">&lt;ol&gt;</em>.</p>
+
+
+        </section>
+        <hr>
+
+        <section id="boas-praticas-listas">
+
+            <h2>Boas Práticas</h2>
+
+            <ul>
+                <li>Utilizar listas quando os itens estiverem relacionados.</li>
+                <li>Escolher ul ou ol conforme a necessidade.</li>
+                <li>Manter a estrutura hierárquica organizada.</li>
+                <li>Utilizar listas aninhadas com moderação.</li>
+                <li>Evitar usar parágrafos para simular listas.</li>
+            </ul>
+
+            <h3>Curiosidade</h3>
+            <p>
+                Menus de navegação em sites modernos frequentemente são construídos usando listas HTML combinadas com
+                CSS.
+            </p>
+            <p>Exemplo: <br>
+            <pre>
+&lt;ul&gt;
+    &lt;li&gt;Início&lt;/li&gt;
+    &lt;li&gt;Sobre&lt;/li&gt;
+    &lt;li&gt;Contato&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+            </p>
+            <p><b>Saída do código acima:</b></p>
+            <ul>
+                <li>Início</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+            </ul>
+
+        </section>
+        <hr>
+
+        <section id="erros-comuns-listas">
+
+            <h2>Erros Comuns</h2>
+            <ul>
+                <li>Inserir tag li fora de uma lista.</li>
+                <li>Utilizar ol quando a ordem não importa.</li>
+                <li>Utilizar ul quando a ordem é importante.</li>
+                <li>Criar listas excessivamente profundas.</li>
+                <li>Fechar as tags incorretamente.</li>
+            </ul>
+
+        </section>
+        <hr>
+
+        <section id="referencias-listas">
+
+            <h2>Referências</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Lists"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Lists">MDN
+                        Web Docs - HTML Lists</a></li>
+                <li><a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_lists.asp">W3Schools - HTML Lists</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="resumo-listas">
+            <h2>Resumo</h2>
+            <p>
+                As listas permitem organizar informações de forma clara e estruturada. O HTML oferece listas não
+                ordenadas &lt;ul&gt;, listas ordenadas &lt;ol&gt; e itens de lista &lt;li&gt;, que podem ser combinados para criar
+                estruturas hierárquicas.
+            </p>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Larissa de Almeida Rosa © 2026</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
+        <a href="#">Voltar ao topo da página.</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títulos e Parágrafos no HTML</title>
+    <style>
+        #saida-do-codigo {
+            background-color: #63636369;
+            padding: 15px;
+        }
+
+        #saida-do-codigo p {
+            margin: 0;
+        }
+
+        blockquote {
+            background-color: #f5f5f5;
+            border-left: 4px solid #999;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Títulos e Parágrafos no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25px">
+        </h1>
+        <nav>
+            <a href="index.html">Página Principal</a> |
+            <a href="#conceito-titulos-paragrafos">Conceito</a> |
+            <a href="#explicando-titulos-paragrafos">Títulos e Parágrafos</a> |
+            <a href="#exemplo-codigo-titulos-paragrafos">Exemplo de Código</a> |
+            <a href="#hierarquia-titulos">Hierarquia dos Títulos</a> |
+            <a href="#explicacao-tags-titulos-paragrafos">Explicação das Tags</a> |
+            <a href="#boas-praticas-titulos-paragrafos">Boas Práticas</a> |
+            <a href="#erros-comuns-titulos-paragrafos">Erros Comuns</a> |
+            <a href="#referencias-titulos-paragrafos">Referências</a> |
+            <a href="#resumo-titulos-paragrafos">Resumo</a>
+        </nav>
+        <hr>
+
+        <h2 id="conceito-titulos-paragrafos">Conceito</h2>
+        <p>Títulos e parágrafos são elementos fundamentais do HTML utilizados para
+            organizar e apresentar informações de forma clara e estruturada.
+        </p>
+
+        <p>Os títulos definem a hierarquia do conteúdo, enquanto os parágrafos são utilizados para exibir blocos de
+            texto.
+        </p>
+
+    </header>
+    <hr>
+
+    <main>
+        <section id="explicando-titulos-paragrafos">
+            <h2>O que são Títulos e Parágrafos?</h2>
+
+            <h3>Títulos</h3>
+
+            <p>
+                Os títulos são utilizados para identificar seções e subseções de uma
+                página. O HTML possui seis níveis de títulos, representados pelas tags
+                &lt;h1&gt; até &lt;h6&gt;.
+            </p>
+
+            <h3>Parágrafos</h3>
+            <p>
+                Os parágrafos são definidos pela tag &lt;p&gt; e servem para organizar blocos
+                de texto em uma página.
+            </p>
+        </section>
+        <hr>
+
+        <!-- Exemplo de Código em HTML - Títulos e Parágrafos -->
+        <section id="exemplo-codigo-titulos-paragrafos">
+            <h2>Exemplo de Código</h2>
+            <p>Veja abaixo um exemplo de código HTML com títulos e parágrafos e logo após a sua saída:</p>
+            <pre>
+<a href="#tag-h">&lt;h1&gt;</a>Títulos&lt;/h1&gt;
+
+<a href="#tag-p">&lt;p&gt;</a>Aprenda os fundamentos do HTML.&lt;/p&gt;
+
+<a href="#tag-hr">&lt;hr&gt;</a>
+
+<a href="#tag-h">&lt;h2&gt;</a>Subtítulos&lt;/h2&gt;
+
+<a href="#tag-p">&lt;p&gt;</a>
+Os títulos ajudam a organizar o conteúdo.
+<a href="#tag-p">&lt;/p&gt;</a>
+
+<a href="#tag-br">&lt;br&gt;</a>
+
+<a href="#tag-h">&lt;h3&gt;</a>Hierarquia&lt;/h3&gt;
+
+<a href="#tag-p">&lt;p&gt;</a>
+Os níveis dos títulos indicam a importância de cada seção.
+<a href="#tag-p">&lt;/p&gt;</a><a href="#tag-br">&lt;br&gt;</a>
+
+<a href="#tag-p">&lt;p&gt;</a>
+Primeira linha.<a href="#tag-br">&lt;br&gt;</a>
+
+Segunda linha.
+<a href="#tag-p">&lt;/p&gt;</a>
+</pre>
+            <p><b>Saída do código acima:</b></p>
+            <div id="saida-do-codigo">
+                <h1>Títulos</h1>
+
+                <p>Aprenda os fundamentos do HTML.</p>
+
+                <hr>
+
+                <h2>Subtítulos</h2>
+
+                <p>
+                    Os títulos ajudam a organizar o conteúdo.
+                </p>
+
+                <br>
+
+                <h3>Hierarquia</h3>
+
+                <p>
+                    Os níveis dos títulos indicam a importância de cada seção.
+                </p><br>
+
+                <p>Primeira linha.<br>
+                    Segunda linha.
+                </p>
+            </div>
+
+        </section>
+        <hr>
+
+        <section id="hierarquia-titulos">
+            <h2>Hierarquia dos Títulos</h2>
+            <p>A MDN enfatiza a importância da hierarquia correta dos títulos para acessibilidade e organização do
+                conteúdo.</p>
+            <pre>
+H1 → Título Principal<br>
+ └─ H2 → Seção<br>
+      └─ H3 → Subseção
+            </pre>
+            <p>
+                Os títulos devem seguir uma ordem lógica para representar a estrutura
+                do conteúdo.
+            </p>
+
+        </section>
+        <hr>
+
+        <section id="explicacao-tags-titulos-paragrafos">
+            <h2>Explicação das Tags</h2>
+
+            <h3 id="tag-h">Tag &lt;h1&gt; até &lt;h6&gt;</h3>
+            <p>
+                O que faz: define títulos e subtítulos em diferentes níveis de importância.
+            </p>
+            <blockquote cite="https://www.w3schools.com/html/html_headings.asp">
+                <p>O <cite>W3Schools</cite> destaca que os títulos devem ser usados para estruturar o conteúdo e não
+                    apenas para
+                    estilizar o texto.</p>
+            </blockquote>
+            <small>
+                <p>Fonte: <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank"
+                        rel="noopener noreferrer">W3Schools - HTML Headings</a></p>
+            </small>
+
+            <h3 id="tag-p">Tag &lt;p&gt;</h3>
+            <p>
+                O que faz: define um parágrafo de texto.
+            </p>
+
+            <h3 id="tag-br">Tag &lt;br&gt;</h3>
+            <p>
+                O que faz: insere uma quebra de linha sem criar um novo parágrafo.
+            </p>
+
+            <h3 id="tag-hr">Tag &lt;hr&gt;</h3>
+
+            <p>
+                O que faz: representa uma mudança de assunto ou separação temática entre conteúdos. Os navegadores
+                normalmente a exibem como uma linha horizontal.<br>
+                A própria <cite>W3Schools</cite> destaca o &lt;hr&gt; como uma separação temática do conteúdo.
+            </p>
+        </section>
+        <hr>
+
+        <section id="boas-praticas-titulos-paragrafos">
+            <h2>Boas Práticas</h2>
+
+            <ul>
+                <li>Utilizar apenas um &lt;h1&gt; como título principal da página.</li>
+                <li>Manter a hierarquia correta dos títulos.</li>
+                <li>Usar &lt;p&gt; para blocos de texto.</li>
+                <li>Utilizar &lt;br&gt; apenas para pequenas quebras de linha.</li>
+                <li>Utilizar &lt;hr&gt; para indicar uma mudança de assunto ou separação temática.</li>
+                <li>Não utilizar títulos apenas para aumentar o tamanho do texto, essa funcionalidade deve ser controlada por estilos CSS.<br>
+                    A MDN e a W3Schools reforçam que títulos devem representar a estrutura do documento e não ser usados
+                    apenas por motivos visuais.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="erros-comuns-titulos-paragrafos">
+            <h2>Erros Comuns</h2>
+
+            <ul>
+                <li>Utilizar vários &lt;h1&gt; sem necessidade.</li>
+                <li>Pular níveis de títulos, como passar de &lt;h1&gt; para &lt;h4&gt;.</li>
+                <li>Utilizar &lt;br&gt; para criar espaçamentos grandes.</li>
+                <li>Escrever textos longos sem utilizar parágrafos.</li>
+                <li>Usar títulos apenas para deixar o texto maior.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="referencias-titulos-paragrafos">
+            <h2>Referências</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs"
+                        target="_blank" rel="noopener noreferrer" title="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs">MDN Web Docs - Headings and Paragraphs</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements"
+                        target="_blank" rel="noopener noreferrer" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements">MDN Web Docs - Heading Elements</a></li>
+                <li><a href="https://www.w3schools.com/html/html_headings.asp" target="_blank"
+                        rel="noopener noreferrer" title="https://www.w3schools.com/html/html_headings.asp">W3Schools - HTML Headings</a></li>
+                <li><a href="https://www.w3schools.com/html/html_paragraphs.asp" target="_blank"
+                        rel="noopener noreferrer" title="https://www.w3schools.com/html/html_paragraphs.asp">W3Schools - HTML Paragraphs</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="resumo-titulos-paragrafos">
+            <h2>Resumo</h2>
+
+            <p>
+                As tags &lt;h1&gt; até &lt;h6&gt; são utilizadas para criar títulos e subtítulos,
+                enquanto a tag &lt;p&gt; é utilizada para criar parágrafos. As tags &lt;br&gt; e &lt;hr&gt; complementam
+                a organização do conteúdo, contribuindo para uma melhor
+                estrutura e legibilidade da página.
+            </p>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Larissa de Almeida Rosa © 2026</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
+        <a href="#">Voltar ao topo da página.</a>
+    </footer>
+</body>
+
+</html>

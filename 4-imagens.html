@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens no HTML</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Imagens no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25px">
+        </h1>
+        <nav>
+            <a href="index.html">Página Principal</a> |
+            <a href="#conceito-imagem">Conceito</a> |
+            <a href="#explicando-imagem">O que são Imagens no HTML?</a> |
+            <a href="#exemplo-codigo-imagem">Exemplo de Código</a> |
+            <a href="#tipos-de-caminho-imagem">Tipos de Caminho para Imagens</a> |
+            <a href="#explicacao-tags-imagem">Explicação das Tags e Atributos</a> |
+            <a href="#formatos-de-imagem">Formatos de Imagem Mais Comuns</a> |
+            <a href="#boas-praticas-imagem">Boas Práticas</a> |
+            <a href="#erros-comuns-imagem">Erros Comuns</a> |
+            <a href="#referencias-imagem">Referências</a> |
+            <a href="#resumo-imagem">Resumo</a>
+        </nav>
+        <hr>
+
+        <h2 id="conceito-imagem">Conceito</h2>
+        <p>
+            As imagens ajudam a tornar uma página mais visual, informativa e atrativa para os usuários.
+        </p>
+        <p>
+            No HTML, as imagens são inseridas utilizando a tag &lt;img&gt;.
+        </p>
+    </header>
+    <hr>
+
+    <main>
+        <section id="explicando-imagem">
+            <h2>O que são Imagens no HTML?</h2>
+            <p>
+                Uma imagem é um recurso visual incorporado à página por meio da tag
+                &lt;img&gt;.
+            </p>
+            <p>
+                Ela pode ser utilizada para ilustrar conteúdos, apresentar produtos,
+                exibir logotipos e complementar informações textuais.
+            </p>
+        </section>
+        <hr>
+
+        <!-- Exemplo de Código em HTML - Imagens <img> -->
+        <section id="exemplo-codigo-imagem">
+            <h2>Exemplo de Código</h2>
+            <p>Veja abaixo um exemplo de código HTML com imagens e logo após a sua saída:</p>
+            <pre>
+<a href="#tag-img">&lt;img src="html5.png" alt="Logotipo do HTML5" width="100" height="100"&gt;</a>
+
+src    → caminho da imagem
+alt    → descrição textual
+width  → largura da imagem
+height → altura da imagem
+</pre>
+            <p id="saida-do-codigo-imagem"><b>Saída do código acima:</b></p>
+            <div>
+                <img src="assets/img/html5.png" alt="Logotipo do HTML5" width="100">
+                <p>Importante:</p>
+                <blockquote
+                    cite="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/HTML_images">
+                    <p>
+                    A MDN destaca que "src" aponta para a imagem e "alt" fornece um texto alternativo para
+                    acessibilidade e
+                    situações em que a imagem não pode ser carregada.
+                    </p>
+                </blockquote>
+                <small>Fonte: <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/HTML_images"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/HTML_images">MDN
+                        Web Docs - HTML Images</a></small>
+            </div>
+
+        </section>
+        <hr>
+
+        <section id="tipos-de-caminho-imagem">
+            <h2>Tipos de Caminho para Imagens</h2>
+
+            <h3>Imagem Local</h3>
+            <code>&lt;img src="assets/img/html5.png" alt="Logotipo HTML5"&gt;</code>
+            <p>
+                Utiliza uma imagem armazenada dentro do próprio projeto.
+            </p>
+            <p>
+                O exemplo de <a href="#saida-do-codigo-imagem">Imagem Local</a> é mostrado na seção anterior.
+            </p>
+
+            <h3>Imagem Externa</h3>
+            <p>
+                Utiliza uma imagem hospedada em outro servidor.
+            </p>
+            <p>Exemplo: <br>
+                <code>&lt;img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="Logo do HTML5 - Imagem Externa" width="128"&gt;</code>
+            </p>
+            <p><b>Saída do código acima:</b></p>
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+                alt="Logo do HTML5 - Imagem Externa" width="128">
+        </section>
+        <hr>
+
+        <section id="explicacao-tags-imagem">
+            <h2>Explicação das Tags e Atributos</h2>
+
+            <h3 id="tag-img">Tag &lt;img&gt;</h3>
+            <p>
+                O que faz: incorpora uma imagem ao documento HTML.
+            </p>
+
+            <h3>Atributo src=""</h3>
+            <p>
+                O que faz: define o caminho da imagem.
+            </p>
+
+            <h3>Atributo alt=""</h3>
+            <p>
+                O que faz: fornece um texto alternativo para a imagem caso ela não possa ser carregada.
+            </p>
+            <p>Exemplo: <br>
+                <code>&lt;img src="html5-imagem.png" alt="Texto alternativo para a imagem: Logotipo do HTML5"&gt;</code>
+            </p>
+            <p><b>Saída do código acima:</b></p>
+            <img src="html5-imagem.png" alt="Texto alternativo para a imagem: Logotipo do HTML5">
+            <p>
+                Como o arquivo não existe, o navegador exibirá o texto alternativo.
+            </p>
+
+            <h3>Atributo width=""</h3>
+            <p>
+                O que faz: define a largura da imagem.
+            </p>
+
+            <h3>Atributo height=""</h3>
+            <p>
+                O que faz: define a altura da imagem.
+            </p>
+
+
+        </section>
+        <hr>
+
+        <section id="formatos-de-imagem">
+            <h2>Formatos de Imagem Mais Comuns</h2>
+
+            <h3>JPG (JPEG)</h3>
+            <p>
+                Ideal para fotografias e imagens com muitas cores.
+            </p>
+
+            <h3>PNG</h3>
+            <p>
+                Ideal para imagens com fundo transparente.
+            </p>
+
+            <h3>SVG</h3>
+            <p>
+                Ideal para logotipos e ícones, pois não perde qualidade ao ser redimensionado.
+            </p>
+
+            <h3>WebP</h3>
+            <p>
+                Formato moderno que oferece boa qualidade com tamanho reduzido.
+            </p>
+
+
+        </section>
+        <hr>
+
+        <section id="boas-praticas-imagem">
+
+            <h2>Boas Práticas</h2>
+            <ul>
+                <li>Utilizar sempre o atributo alt.</li>
+                <li>Dar nomes descritivos aos arquivos de imagem.</li>
+                <li>Utilizar formatos adequados para cada situação.</li>
+                <li>Manter imagens organizadas em uma pasta específica.</li>
+                <li>Definir width e height quando apropriado.</li>
+            </ul>
+
+            <h3>Curiosidade</h3>
+            <p>
+                A tag &lt;img&gt; é uma tag vazia, ou seja, ela não possui conteúdo interno e não necessita de
+                fechamento.
+            </p>
+
+        </section>
+        <hr>
+
+        <section id="erros-comuns-imagem">
+
+            <h2>Erros Comuns</h2>
+            <ul>
+                <li>Esquecer o atributo alt.</li>
+                <li>Utilizar caminhos incorretos no src.</li>
+                <li>Usar imagens muito pesadas.</li>
+                <li>Organizar imagens em locais desnecessariamente complexos.</li>
+                <li>Utilizar o formato errado para a finalidade da imagem.</li>
+                <li>Erros de digitação na aplicação do código.</li>
+            </ul>
+
+        </section>
+        <hr>
+
+        <section id="referencias-imagem">
+
+            <h2>Referências</h2>
+            <ul>
+                <li>Imagem Externa: <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer"
+                        title="https://pixabay.com">Pixabay</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images">MDN
+                        Web Docs - HTML Images</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img" target="_blank"
+                        rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img">MDN Web Docs -
+                        &lt;img&gt;</a></li>
+                <li><a href="https://www.w3schools.com/html/html_images.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_images.asp">W3Schools - HTML Images</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/tags/tag_img.asp">W3Schools - HTML &lt;img&gt; Tag</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="resumo-imagem">
+            <h2>Resumo</h2>
+            <p>
+                A tag &lt;img&gt; é utilizada para inserir imagens em páginas HTML. Os atributos src e alt são
+                fundamentais para o funcionamento correto e para a acessibilidade da imagem, enquanto width e height
+                permitem definir suas dimensões.
+            </p>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Larissa de Almeida Rosa © 2026</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
+        <a href="#">Voltar ao topo da página.</a>
+    </footer>
+</body>
+
+</html>

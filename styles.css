@@ -1,0 +1,64 @@
+        /* Família de fontes do body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Menu lateral */
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 190px;
+            height: 100vh;
+            padding: 15px;
+            border-right: 1px solid #ccc;
+
+            /* Adiciona rolamento vertical no menu */
+            overflow-y: auto;
+        }
+
+        /* Tamanho de fonte aside h2, h3, li */
+        aside h2 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        aside h3 {
+            font-size: 16px;
+        }
+
+        aside ol {
+            margin-left: 12px;
+            margin-top: 0px;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Links do menu */
+        aside nav a {
+            display: block;
+
+            padding: 6px 0;
+
+            color: #0044ff;
+
+            text-decoration: none;
+        }
+
+        /* Realce simples ao passar o mouse */
+        aside nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo principal */
+        header, main, hr, footer {
+            margin-left: 230px;
+            margin-top: 20px;
+        }
+
+        footer p{
+            text-align: center;
+            line-height: 1.2;
+            padding: 5px;
+            margin: 0 0 5px;
+        }
