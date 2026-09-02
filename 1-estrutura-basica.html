@@ -13,8 +13,9 @@
         <h1>Estrutura Básica no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25px">
         </h1>
         <p>
-            Esta página apresenta a estrutura mínima necessária para criar um documento HTML5, explicando seus principais elementos e boas práticas.
-        </p> 
+            Esta página apresenta a estrutura mínima necessária para criar um documento HTML5, explicando seus
+            principais elementos e boas práticas.
+        </p>
         <nav>
             <a href="index.html">Página Principal</a> |
             <a href="#conceito-html">Conceito</a> |
@@ -26,31 +27,36 @@
             <a href="#referencias-html">Referências</a> |
             <a href="#resumo-html">Resumo</a>
         </nav>
-        <hr>
-
-        <h2 id="conceito-html">Conceito</h2>
-        <p>Toda página HTML precisa de uma estrutura básica para que o navegador consiga interpretar corretamente seu conteúdo.
-        </p>
-
-        <p>Essa estrutura define o tipo do documento, informações da página e o conteúdo visível ao usuário.
-        </p>
-
     </header>
     <hr>
 
     <main>
+        <section id="conceito-html">
+            <h2>Conceito</h2>
+            <p>Toda página HTML precisa de uma estrutura básica para que o navegador consiga interpretar corretamente
+                seu conteúdo.
+            </p>
+
+            <p>Essa estrutura define o tipo do documento, informações da página e o conteúdo visível ao usuário.
+            </p>
+        </section>
+        <hr>
+        
         <section id="explicando-a-tag">
             <h2>O que é uma Tag?</h2>
-            <p>As tags são elementos utilizados para estruturar e organizar o conteúdo de uma página HTML. Elas informam ao navegador como cada parte do conteúdo deve ser interpretada.
+            <p>As tags são elementos utilizados para estruturar e organizar o conteúdo de uma página HTML. Elas informam
+                ao navegador como cada parte do conteúdo deve ser interpretada.
 
             </p>
-            <p>A maioria das tags possui uma tag de abertura e uma tag de fechamento. O conteúdo fica localizado entre elas.
+            <p>A maioria das tags possui uma tag de abertura e uma tag de fechamento. O conteúdo fica localizado entre
+                elas.
             </p>
             <p>Exemplo:<br><br>
-            <code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</code>
+                <code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</code>
             </p>
-            <p>Algumas tags não precisam de fechamento porque não possuem conteúdo interno. Essas tags são chamadas de tags vazias.<br><br>
-            Exemplos:
+            <p>Algumas tags não precisam de fechamento porque não possuem conteúdo interno. Essas tags são chamadas de
+                tags vazias.<br><br>
+                Exemplos:
             </p>
             <ul>
                 <li>&lt;br&gt;</li>
@@ -63,7 +69,8 @@
         <!-- Exemplo de Código em HTML - 28-08-26 -->
         <section id="exemplo-codigo">
             <h2>Exemplo de Código</h2>
-            <p>Abaixo está um exemplo de uma página HTML com a estrutura básica, clique nas tags para ver a explicação:</p>
+            <p>Abaixo está um exemplo de uma página HTML com a estrutura básica, clique nas tags para ver a explicação:
+            </p>
             <pre>
  <a href="#tag-doctype">&lt;!DOCTYPE html&gt;</a>
  
@@ -116,7 +123,8 @@
             <p>O que faz: informa ao navegador que o documento utiliza HTML5.</p>
 
             <h3 id="tag-html">Tag &lt;html&gt;</h3>
-            <p>O que faz: é o elemento raiz da página e contém todo o conteúdo HTML. Quando utilizado com o atributo <b>lang</b>, informa o idioma principal da página.</p>
+            <p>O que faz: é o elemento raiz da página e contém todo o conteúdo HTML. Quando utilizado com o atributo
+                <b>lang</b>, informa o idioma principal da página.</p>
 
             <h3 id="tag-head">Tag &lt;head&gt;</h3>
             <p>O que faz: armazena informações da página que não são exibidas diretamente ao usuário.</p>
@@ -128,26 +136,30 @@
                 <li>Scripts JavaScript</li>
             </ul>
 
-             <h3 id="tag-meta">Tag &lt;meta&gt;</h3>
-             <p id="tag-meta-charset">Quando utilizada com o atributo <b>charset</b>, define a codificação de caracteres do documento, garantindo a exibição correta de acentos e símbolos especiais.<br>
-             Exemplo: á é í ó ú ç ã</p>
-             <p id="tag-meta-description">Quando utilizado o atributo <b>name</b> e <b>content</b>, permite adicionar metadados à página, como descrição, palavras-chave, autor, entre outros.</p>
-             <p id="tag-meta-viewport">Quando utilizada com o atributo <b>name="viewport"</b> e o <b>content="width=device-width, initial-scale=1.0"</b>, permite adaptar a página para telas menores, como celulares e tablets.</p>
+            <h3 id="tag-meta">Tag &lt;meta&gt;</h3>
+            <p id="tag-meta-charset">Quando utilizada com o atributo <b>charset</b>, define a codificação de caracteres
+                do documento, garantindo a exibição correta de acentos e símbolos especiais.<br>
+                Exemplo: á é í ó ú ç ã</p>
+            <p id="tag-meta-description">Quando utilizado o atributo <b>name</b> e <b>content</b>, permite adicionar
+                metadados à página, como descrição, palavras-chave, autor, entre outros.</p>
+            <p id="tag-meta-viewport">Quando utilizada com o atributo <b>name="viewport"</b> e o
+                <b>content="width=device-width, initial-scale=1.0"</b>, permite adaptar a página para telas menores,
+                como celulares e tablets.</p>
 
-             <h3 id="tag-title">Tag &lt;title&gt;</h3>
-             <p>O que faz: define o texto exibido na aba do navegador.</p>
+            <h3 id="tag-title">Tag &lt;title&gt;</h3>
+            <p>O que faz: define o texto exibido na aba do navegador.</p>
 
-             <h3 id="tag-body">Tag &lt;body&gt;</h3>
-             <p>O que faz: contém todo o conteúdo da página web visível para o usuário.</p>
+            <h3 id="tag-body">Tag &lt;body&gt;</h3>
+            <p>O que faz: contém todo o conteúdo da página web visível para o usuário.</p>
 
-             <h3 id="tag-header">Tag &lt;header&gt;</h3>
-             <p>O que faz: representa o cabeçalho da página ou seção.</p>
-             <p>Normalmente a tag &lt;header&gt; contém:</p>
-             <ul>
+            <h3 id="tag-header">Tag &lt;header&gt;</h3>
+            <p>O que faz: representa o cabeçalho da página ou seção.</p>
+            <p>Normalmente a tag &lt;header&gt; contém:</p>
+            <ul>
                 <li>logotipo</li>
                 <li>título</li>
                 <li>menu de navegação</li>
-             </ul>
+            </ul>
 
             <h3 id="tag-main">Tag &lt;main&gt;</h3>
             <p>O que faz: representa o conteúdo principal da página.</p>
@@ -163,10 +175,11 @@
             </ul>
 
             <h3 id="comentario-html">Comentários</h3>
-            <p>Comentários são anotações inseridas no código HTML que não são exibidas na página pelo navegador. Eles servem para documentar o código e facilitar sua manutenção.
+            <p>Comentários são anotações inseridas no código HTML que não são exibidas na página pelo navegador. Eles
+                servem para documentar o código e facilitar sua manutenção.
             </p>
             <p>Exemplo:<br><br>
-            <code>
+                <code>
                 &lt;!-- Este é um comentário HTML --&gt;
             </code>
             </p>
@@ -178,10 +191,12 @@
             <ul>
                 <li>Utilizar a tag &lt;!DOCTYPE html&gt; no início do documento para definir o tipo de documento.</li>
                 <li>Definir o idioma da página corretamente na tag &lt;html&gt; para melhorar acessibilidade e SEO.</li>
-                <li>Incluir as tags &lt;head&gt; e &lt;body&gt; para separar as informações de metadados e o conteúdo visível.</li>
+                <li>Incluir as tags &lt;head&gt; e &lt;body&gt; para separar as informações de metadados e o conteúdo
+                    visível.</li>
                 <li>Usar a tag &lt;meta charset="UTF-8"&gt; para compatibilidade de caracteres.</li>
-                <li>Adicionar a tag &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; para tornar a página responsiva em dispositivos móveis.</li>
-                <li>Escolher um título curto, descritivo e relevante para a página na tag &lt;title&gt;.</li>   
+                <li>Adicionar a tag &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; para
+                    tornar a página responsiva em dispositivos móveis.</li>
+                <li>Escolher um título curto, descritivo e relevante para a página na tag &lt;title&gt;.</li>
                 <li>Ter apenas uma tag &lt;main&gt; por documento.</li>
                 <li>Manter a indentação consistente.</li>
                 <li>Utilizar tags semânticas como &lt;header&gt;, &lt;main&gt; e &lt;footer&gt;.</li>
@@ -205,15 +220,21 @@
         <section id="referencias-html">
             <h2>Referências</h2>
             <ul>
-                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank" rel="noopener noreferrer" title="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">MDN Web Docs - Estrutura de Documentos e Sites</a></li>
-                <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener noreferrer" title="https://www.w3schools.com/html/html_basic.asp">W3Schools - HTML Basic</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">MDN
+                        Web Docs - Estrutura de Documentos e Sites</a></li>
+                <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_basic.asp">W3Schools - HTML Basic</a></li>
             </ul>
         </section>
         <hr>
 
         <section id="resumo-html">
             <h2>Resumo</h2>
-            <p>A estrutura básica de um documento HTML é formada pelas tags &lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt; e &lt;body&gt;. Esses elementos garantem que o navegador interprete corretamente a página e fornecem a base para qualquer projeto web.
+            <p>A estrutura básica de um documento HTML é formada pelas tags &lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;
+                e &lt;body&gt;. Esses elementos garantem que o navegador interprete corretamente a página e fornecem a
+                base para qualquer projeto web.
             </p>
         </section>
     </main>
@@ -221,7 +242,8 @@
 
     <footer>
         <p>Larissa de Almeida Rosa © 2026</p>
-        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento pertencem a seus respectivos autores e fontes originais.</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
         <a href="#">Voltar ao topo da página.</a>
     </footer>
 </body>
