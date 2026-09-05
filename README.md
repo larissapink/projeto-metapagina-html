@@ -16,29 +16,6 @@ Este projeto consiste em um portfólio desenvolvido em **HTML**, cujo objetivo p
 - Visual Studio Code
 - Git e GitHub
 
-## 📂 Estrutura do projeto
-
-```text
-projeto-metapagina-html-github/
-│
-├── index.html
-├── 1-estrutura-basica.html
-├── 2-titulos-paragrafos.html
-├── 3-links.html
-├── 4-imagens.html
-├── 5-listas.html
-├── 6-tabelas.html
-├── 7-formularios.html
-├── 8-semantica.html
-├── 9-audio-video.html
-├── 10-acessibilidade-basica.html
-├── styles.css
-└── assets/
-    ├── imagens/
-    ├── audio/
-    └── video/
-```
-
 ## ✅ Status do projeto
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
