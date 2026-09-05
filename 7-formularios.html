@@ -1,11 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <title>Formulários no HTML</title>
+    <style>
+        form {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.555);
+        }
+
+        .p-ex-principais-elementos {
+            font-weight: bold;
+            margin: 0 0 7px 0;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Formulários</h1>
+    <!-- Cabeçalho da página contendo o menu navegação -->
+    <header>
+        <h1>Formulários no HTML <img src="assets/img/html5.png" alt="Logo HTML5" width="25"></h1>
+        <!-- o primeiro link leva à página principal e os demais links navegam pelas seções da página -->
+        <nav>
+            <a href="index.html">Página Principal</a> |
+            <a href="#conceito-formularios">Conceito</a> |
+            <a href="#explicando-formularios">O que são Formulários?</a> |
+            <a href="#exemplo-codigo-formularios">Exemplo de Código</a> |
+            <a href="#elementos-principais-formularios">Elementos Principais de um Formulário</a> |
+            <a href="#explicacao-tags-formularios">Explicação das Tags</a> |
+            <a href="#explicacao-atributos-formularios">Explicação dos Atributos</a> |
+            <a href="#boas-praticas-formularios">Boas Práticas</a> |
+            <a href="#erros-comuns-formularios">Erros Comuns</a> |
+            <a href="#referencias-formularios">Referências</a> |
+            <a href="#resumo-formularios">Resumo</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Conteúdo principal da página separado por seções -->
+    <main>
+        <!-- Seção que introduz o conceito de formulários -->
+        <section id="conceito-formularios">
+            <h2>Conceito</h2>
+            <p>Os formulários permitem coletar informações fornecidas pelos usuários por meio de campos de entrada e
+                botões.</p>
+            <p>Eles são amplamente utilizados em cadastros, pesquisas, sistemas de login e formulários de contato.</p>
+        </section>
+        <hr>
+
+        <!-- Seção que explica o que são formulários -->
+        <section id="explicando-formularios">
+            <h2>O que são Formulários?</h2>
+            <p>Um formulário é uma área da página destinada à entrada de dados pelo usuário.</p>
+            <p>Os dados podem ser digitados, selecionados ou enviados por meio de diferentes tipos de campos.</p>
+        </section>
+        <hr>
+
+
+        <!-- Exemplo de Código em HTML - Formulários <form> -->
+        <section id="exemplo-codigo-formularios">
+            <h2>Exemplo de Código</h2>
+            <p>Veja abaixo um exemplo de código HTML com formulário e logo após a sua saída:</p>
+            <pre>
+<a href="#tag-form"> &lt;form&gt;</a>
+
+    <a href="#tag-label">&lt;label for="nome"&gt;Nome:&lt;/label&gt;</a>
+    <a href="#tag-input">&lt;input type="text" id="nome"&gt;</a>
+    &lt;!-- tag de quebra de linha para criar espaçamento entre os campos (fins visuais sem significado semântico) --&gt;
+    &lt;br&gt;&lt;br&gt; 
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email"&gt;
+    &lt;!-- tag de quebra de linha para criar espaçamento entre os campos (fins visuais sem significado semântico) --&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    <a href="#tag-button">&lt;button type="submit"&gt;</a>
+        Enviar
+    &lt;/button&gt;
+
+&lt;/form&gt;
+            </pre>
+            <!-- Demonstração da saída do código -->
+            <p id="saida-do-codigo-formularios"><b>Saída do código acima:</b></p>
+            <div>
+                <!-- Tag que inicia o formulário -->
+                <form>
+
+                    <!-- Nome do campo -->
+                    <label for="nome-exemplo">Nome:</label>
+                    <!-- Campo de entrada com o tipo especificado -->
+                    <input type="text" id="nome-exemplo">
+                    <!-- tag de quebra de linha para criar espaçamento entre os campos (fins visuais sem significado semântico) -->
+                    <br><br>
+
+                    <label for="email-exemplo">Email:</label>
+                    <input type="email" id="email-exemplo">
+                    <!-- tag de quebra de linha para criar espaçamento entre os campos (fins visuais sem significado semântico) -->
+                    <br><br>
+
+                    <!-- Botão com função de envio -->
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                </form> <!--Fechamento da tag do formulário -->
+            </div>
+            <!-- Informar ao usuário sobre a estilização para que ele fique ciente que a saída dele será diferente do exemplo -->
+            <p><strong>Observação: </strong>o formulário acima possui estilização CSS para fins de melhor visualização
+                do conteúdo.</p>
+
+        </section>
+        <hr>
+
+        <section id="elementos-principais-formularios">
+            <h2>Elementos Principais de um Formulário</h2>
+
+            <h3>Campo de Texto</h3>
+            <p>Utilizado para permitir que o usuário digite um valor de texto.<br>
+                Ex: Nome, Endereço, etc.</p>
+            <pre>
+&lt;form&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text"&gt;
+&lt;/form&gt;
+            </pre>
+            <p>Exemplo:</p>
+            <div id="exemplo-campo-texto">
+                <form>
+                    <label for="nome-explicacao">Nome:</label>
+                    <input type="text" id="nome-explicacao">
+                </form>
+            </div>
+
+            <h3>Campo de E-mail</h3>
+            <p>Utilizado para permitir que o usuário digite um endereço de e-mail.</p>
+            <p><strong>Recomendação:</strong> Quando solicitar entrada de dados do tipo "email", utilize &lt;input type="email"&gt; em vez de &lt;input type="text"&gt; para melhora a experiência do usuário ao adaptar o teclado nos celulares e validar o formato do texto de forma automática. Ex: <u>exemplo@dominio.com</u></p>
+            <pre>
+&lt;form&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email"&gt;
+&lt;/form&gt;
+            </pre>
+            <p>Exemplo:</p>
+            <div id="exemplo-campo-e-mail">
+                <form>
+                    <label for="email-explicacao">Email:</label>
+                    <input type="email" id="email-explicacao">
+                </form>
+            </div>
+
+            <h3>Campo de Senha</h3>
+            <p>Utilizado para permitir que o usuário digite uma senha atendendo requisitos de privacidade.</p>
+            <pre>
+&lt;form&gt;
+    &lt;label for="senha"&gt;Senha:&lt;/label&gt;
+    &lt;input type="password"&gt;
+&lt;/form&gt;
+            </pre>
+            <p>Exemplo:</p>
+            <div id="exemplo-campo-senha">
+                <form>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha">
+                </form>
+            </div>
+
+            <h3>Caixa de Seleção</h3>
+            <p>Utilizada para permitir que o usuário selecione uma ou mais opções de um conjunto de itens.</p>
+            <pre>
+&lt;form&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;label for="html"&gt;HTML&lt;/label&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;label for="css"&gt;CSS&lt;/label&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
+&lt;/form&gt;
+            </pre>
+            <p>Exemplo:</p>
+            <div>
+                <form>
+                    <p class="p-ex-principais-elementos">Escolha quais temas você deseja aprender:</p>
+                    <input type="checkbox" id="html">
+                    <label for="html">HTML</label><br>
+                    <input type="checkbox" id="css">
+                    <label for="css">CSS</label><br>
+                    <input type="checkbox" id="javascript">
+                    <label for="javascript">JavaScript</label>
+                </form>
+            </div>
+
+            <h3>Botão de Opção</h3>
+            <p>Utilizado para permitir que o usuário selecione uma única opção de um conjunto de itens.</p>
+            <pre>
+&lt;form&gt;
+    &lt;input type="radio" id="manha" name="periodo" value="manha"&gt;
+    &lt;label for="manha"&gt;Manhã&lt;/label&gt;
+    &lt;input type="radio" id="tarde" name="periodo" value="tarde"&gt;
+    &lt;label for="tarde"&gt;Tarde&lt;/label&gt;
+    &lt;input type="radio" id="noite" name="periodo" value="noite"&gt;
+    &lt;label for="noite"&gt;Noite&lt;/label&gt;
+&lt;/form&gt;
+            </pre>
+            <p>Exemplo:</p>
+            <div>
+                <form>
+                    <p class="p-ex-principais-elementos">Escolha o período que você deseja estudar:</p>
+                    <input type="radio" id="manha" name="periodo" value="manha">
+                    <label for="manha">Manhã</label><br>
+                    <input type="radio" id="tarde" name="periodo" value="tarde">
+                    <label for="tarde">Tarde</label><br>
+                    <input type="radio" id="noite" name="periodo" value="noite">
+                    <label for="noite">Noite</label>
+                </form>
+            </div>
+
+            <h3>Área de Texto</h3>
+            <p>Utilizada para permitir que o usuário digite um texto mais longo, como comentários ou mensagens.</p>
+            <pre>
+&lt;form&gt;
+    &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;
+    <a href="#tag-textarea">&lt;textarea id="mensagem" name="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;</a>
+&lt;/form&gt;
+
+Legenda:
+- rows: define o número de linhas visíveis na área de texto.
+- cols: define o número de colunas visíveis na área de texto.
+            </pre>
+            <p>Exemplo:</p>
+            <div>
+                <form>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+                </form>
+            </div>
+
+            <h3>Botão</h3>
+            <p>Utilizado para permitir que o usuário execute uma ação, como enviar um formulário ou limpar os campos.</p>
+            <p><strong>Observação:</strong> o uso de botões com funcionalidade requer um conhecimento sobre os atributos "action" e "method" do elemento &lt;form&gt;, o que eu não irei abordar neste tutorial.</p>
+            <pre>
+&lt;form action="/enviar-dados" method="POST"&gt;
+  &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+  &lt;input type="text" id="nome" name="nome"&gt;
+
+  &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;!-- Botão de enviar --&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+
+  &lt;!-- Botão de limpar --&gt;
+  &lt;button type="reset"&gt;Limpar&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+            <p>Exemplo:</p>
+            <div>
+                <form action="/enviar-dados" method="POST">
+                    <label for="nome-botao">Nome:</label>
+                    <input type="text" id="nome-botao" name="nome-botao">
+                    <br><br>
+                    <label for="email-botao">E-mail:</label>
+                    <input type="email" id="email-botao" name="email-botao">
+                    <br><br>
+                    <!-- Botão de enviar -->
+                    <button type="submit">Enviar</button>
+
+                    <!-- Botão de limpar -->
+                    <button type="reset">Limpar</button>
+                </form>
+                <p><strong>Neste exemplo você consegue testar a funcionalidade do botão "Limpar"</strong></p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="explicacao-tags-formularios">
+            <h2>Explicação das Tags</h2>
+
+            <h3 id="tag-form">Tag &lt;form&gt;</h3>
+            <p>O que faz: cria um formulário HTML para coleta de dados.</p>
+
+            <h3 id="tag-label">Tag &lt;label&gt;</h3>
+            <p>O que faz: cria uma legenda para um elemento de entrada, ou seja, identifica e descreve um campo do formulário.</p>
+
+            <h3 id="tag-input">Tag &lt;input&gt;</h3>
+            <p>O que faz: cria campos para entrada de dados no formulário.</p>
+
+            <h3 id="tag-textarea">Tag &lt;textarea&gt;</h3>
+            <p>O que faz: cria uma área de texto para entrada de dados mais longos, como comentários ou mensagens.</p>
+
+            <h3 id="tag-button">Tag &lt;button&gt;</h3>
+            <p>O que faz: cria um botão clicável que pode ser usado para enviar o formulário, limpar os campos ou executar outras ações.</p>
+        </section>
+
+        <section id="explicacao-atributos-formularios">
+            <h2>Explicação dos Atributos</h2>
+
+            <h3 id="atributo-type">Atributo type</h3>
+            <p>O que faz: define o tipo de campo de entrada ou botão, como texto, e-mail, senha, checkbox, radio, submit, reset, entre outros.</p>
+
+            <h3 id="atributo-id">Atributo id</h3>
+            <p>O que faz: define um identificador único para o elemento, permitindo que ele seja referenciado por outros elementos ou por scripts.</p>
+
+            <h3 id="atributo-for">Atributo for</h3>
+            <p>O que faz: associa um elemento &lt;label&gt; a um elemento de entrada específico, permitindo que o usuário clique no rótulo para focar no campo correspondente.</p>
+
+            <h3 id="atributo-name">Atributo name</h3>
+            <p>O que faz: define o nome do elemento, que é usado para identificar os dados enviados ao servidor quando o formulário é submetido.</p>
+
+            <h3 id="atributo-value">Atributo value</h3>
+            <p>O que faz: define o valor do elemento, que pode ser enviado ao servidor quando o formulário é submetido ou usado para definir o estado inicial de um campo.</p>
+        </section>
+        <hr>
+
+        <section id="boas-praticas-formularios">
+
+            <h2>Boas Práticas</h2>
+
+            <ul>
+                <li>Utilizar labels para identificar os campos.</li>
+                <li>Associar corretamente os atributos for e id.</li>
+                <li>Escolher o tipo de input adequado para cada situação.</li>
+                <li>Utilizar textos claros nos botões.</li>
+                <li>Organizar os campos de forma lógica.</li>
+            </ul>
+
+            <h3>Curiosidade</h3>
+            <p>Grande parte da interação em sistemas web ocorre por meio de formulários.</p>
+            <p><b>Exemplo:</b> Cadastros, pesquisas, comentários, logins e buscas utilizam formulários HTML.</p>
+            <p>Sabe aquela descrição que aparece dentro de um campo e quando clicamos no campo ele desaparece? Isso é chamado de placeholder. O placeholder é um atributo que pode ser usado para fornecer uma dica ao usuário sobre o tipo de informação esperada no campo. Ficou curioso em como usá-lo? Acesse <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/placeholder" title="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/placeholder" target="_blank" rel="noopener noreferrer">MDN Web Docs - Placeholder</a> para mais informações.</p>
+        </section>
+        <hr>
+
+        <section id="erros-comuns-formularios">
+
+            <h2>Erros Comuns</h2>
+            <ul>
+                <li>Não utilizar labels.</li>
+                <li>Utilizar o tipo de input incorreto (por exemplo, usar input type="text" para campos de e-mail).</li>
+                <li>Não associar corretamente for e id.</li>
+                <li>Campos sem descrição clara.</li>
+                <li>Botões com textos genéricos.</li>
+            </ul>
+
+        </section>
+        <hr>
+
+        <section id="referencias-formularios">
+
+            <h2>Referências</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms">MDN Web Docs - HTML Forms</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Forms/How_to_structure_a_web_form"
+                        target="_blank" rel="noopener noreferrer"
+                        title="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Forms/How_to_structure_a_web_form">MDN Web Docs - How to Structure a Web Form</a></li>
+                <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_forms.asp">W3Schools - HTML Forms</a></li>
+                <li><a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank" rel="noopener noreferrer"
+                        title="https://www.w3schools.com/html/html_form_elements.asp">W3Schools - HTML Forms Elements</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="resumo-formularios">
+            <h2>Resumo</h2>
+            <p>Os formulários permitem coletar dados dos usuários. As tags &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;textarea&gt; e &lt;button&gt; trabalham juntas para criar interfaces de entrada de informações de forma organizada e acessível.</p>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Larissa de Almeida Rosa © 2026</p>
+        <p>Este site foi desenvolvido para fins educacionais e de estudo. As informações técnicas e de conhecimento
+            pertencem a seus respectivos autores e fontes originais.</p>
+        <a href="#">Voltar ao topo da página.</a>
+    </footer>
 </body>
+
 </html>
